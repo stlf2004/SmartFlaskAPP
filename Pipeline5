@@ -3,10 +3,10 @@ pipeline {
     label 'built-in'
   }
   environment {
-    registry = "kss7/my-smart-app"
+    registry = "stlf2004/my-smart-app"
     img = "$registry" + ":${env.BUILD_ID}"
     registryCredential = 'docker-hub-login' //withRegistry needs just credentialsId so give like this
-    mailRecipients = "abcd@myyahoo.com, kss0101@mymail.com"
+    mailRecipients = "398372655@qq.com"
     jobName = "${currentBuild.fullDisplayName}"
   }
   // options {
